@@ -1,0 +1,6 @@
+jenkins:
+  ports: []
+  volumes: []
+  extends:
+    file: docker-compose.yml
+    service: jenkins
