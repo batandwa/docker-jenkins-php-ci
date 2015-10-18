@@ -1,9 +1,10 @@
 jenkins:
   image: iliyan/jenkins-ci-php
-  container_name: jenkins
+  container_name: jenkins-php
   ports:
     - "8000"
     - "8080"
-  #volumes:
-  #  - ./data:/var/lib/jenkins
+  volumes:
+    - ~/Code:/code
+    - ./data:/var/lib/jenkins
   restart: always

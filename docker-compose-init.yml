@@ -1,6 +1,9 @@
+#jenkins:
+#  ports: []
+#  volumes: []
+#  extends:
+#    file: docker-compose.yml
+#    service: jenkins
 jenkins:
-  ports: []
-  volumes: []
-  extends:
-    file: docker-compose.yml
-    service: jenkins
+  image: iliyan/jenkins-ci-php
+  container_name: jenkins-php
