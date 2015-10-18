@@ -5,7 +5,7 @@ jenkins:
     - "8000"
     - "8080"
   volumes:
-    - ~/Code:/code
+    - ~/projects:/code
     - ./data:/var/lib/jenkins
     - ./setup.sh:/setup.sh
   restart: always
